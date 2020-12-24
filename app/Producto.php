@@ -31,8 +31,5 @@ class Producto extends Model
         return $this->hasMany('App\DetalleVenta', 'producto_id', 'producto_id');
     }  
     
-    public static function ActualizarStock($producto_id,$cantidad){
-        return DB::select("UPDATE productos set cantidad = cantidad - '".$cantidad."' where producto_id='".$producto_id."'"
-        );
-    }
+
 }
