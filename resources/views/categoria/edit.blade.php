@@ -4,10 +4,10 @@
     <br>
     <div class="card">
         <div class="card-header">
-            <h4><strong>Mantenedor de CATEGORÍA</strong></h4>
+            <h4><strong>Modificar categoria</strong></h4>
         </div>
         <div class="card-body">
-            <h5 class="card-title"><u>.::Modificar Categoría</u></h5>
+
             <p class="card-text">
                 <form action="{{route('categoria.update', $categoria->categoria_id)}}" method="POST" onsubmit="return validar_cat()">
                     @method('put')
@@ -31,8 +31,8 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i>Guardar</button>
-                    <a href="{{route('categoria.index')}}" class="btn btn-danger"><i class="fas fa-ban"></i>Cancelar</a>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-save mr-1"></i>Guardar</button>
+                    <a href="{{route('categoria.index')}}" class="btn btn-danger"><i class="fas fa-ban pr-1"></i>Cancelar</a>
                 </form>
             </p>
         </div>

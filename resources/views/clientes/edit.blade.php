@@ -4,10 +4,9 @@
     <br>
     <div class="card">
         <div class="card-header">
-            <h4><strong>Mantenedor de CLIENTE</strong></h4>
+            <h4><strong>Actualizar los datos de {{$cliente->nombres}} 👨🏻‍🌾</strong></h4>
         </div>
         <div class="card-body">
-            <h5 class="card-title"><u>.::Modificar Cliente</u></h5>
             <p class="card-text">
                 <form action="{{route('clientes.update', $cliente->cliente_id)}}" method="POST">
                     @csrf

@@ -51,10 +51,11 @@
                                 <td>{{$item->precio}}</td>
                                 <td>{{$item->cantidad}}</td>
                                 <td>
-                                    <a href="{{route('productos.edit',$item->producto_id)}}" class="btn btn-sm btn-warning mr-2"><i
-                                            class="fas fa-edit"></i>Editar</a>
+                                    <a href="{{route('productos.edit',$item->producto_id)}}" class="btn btn-sm btn-warning mr-2">
+                                        <i class="fas fa-edit mr-1"></i>Editar</a>
                                     <a href="{{route('productos.confirmar',$item->producto_id)}}"
-                                        class="btn btn-sm btn-danger"><i class="fas fa-trash"></i>Quitar</a>
+                                        class="btn btn-sm btn-danger">
+                                        <i class="fas fa-trash mr-1"></i>Quitar</a>
                                 </td>
                             </tr>
                             @endforeach

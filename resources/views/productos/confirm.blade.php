@@ -4,10 +4,9 @@
     <br>
     <div class="card">
         <div class="card-header">
-            <h4><strong>Mantenedor de PRODUCTO</strong></h4>
+            <h4><strong>Eliminar {{$producto->descripcion}}</strong></h4>
         </div>
         <div class="card-body">
-            <h5 class="card-title"><u>.::Eliminar Producto</u></h5>
             <p class="card-text">
                 <p class="card-text">
                     <strong>Código: </strong> {{$producto->producto_id}} <br>

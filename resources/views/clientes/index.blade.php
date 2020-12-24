@@ -47,10 +47,10 @@
             <td>{{$item->email}}</td>
             <td>{{$item->direccion}}</td>
             <td>
-              <a href="{{route('clientes.edit',$item->cliente_id)}}" class="btn btn-sm btn-warning mr-2"><i
-                  class="fas fa-edit"></i>Editar</a>
-              <a href="{{route('clientes.show',$item->cliente_id)}}" class="btn btn-sm btn-danger"><i
-                  class="fas fa-trash"></i>Quitar</a>
+              <a href="{{route('clientes.edit',$item->cliente_id)}}" class="btn btn-sm btn-warning mr-2">
+                <i class="fas fa-edit pr-1"></i>Editar</a>
+              <a href="{{route('clientes.show',$item->cliente_id)}}" class="btn btn-sm btn-danger ">
+                <i class="fas fa-trash pr-1"></i>Quitar</a>
             </td>
           </tr>
           @endforeach

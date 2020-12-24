@@ -4,10 +4,10 @@
     <br>
     <div class="card">
         <div class="card-header">
-            <h4><strong>Mantenedor de CLIENTE</strong></h4>
+            <h4><strong>Nuevo cliente 👨🏻‍🌾</strong></h4>
         </div>
         <div class="card-body">
-            <h5 class="card-title"><u>.::Nuevo Cliente</u></h5>
+
             <p class="card-text">
                 <form action="{{route('clientes.store')}}" method="POST">
                     @csrf

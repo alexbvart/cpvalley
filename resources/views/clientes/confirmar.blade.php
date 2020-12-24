@@ -4,10 +4,9 @@
     <br>
     <div class="card">
         <div class="card-header">
-            <h4><strong>Mantenedor de CLIENTE</strong></h4>
+            <h4><strong>Eliminar a {{$cliente->nombres}} 👨🏻‍🌾</strong></h4>
         </div>
         <div class="card-body">
-            <h5 class="card-title"><u>.::Eliminar Cliente</u></h5>
             <p class="card-text">
                 <p class="card-text">
                     <strong>Código: </strong> {{$cliente->cliente_id}} <br>
@@ -20,12 +19,12 @@
                     @csrf
                     <div class="mx-auto">
                         <button type="submit" class="btn btn-sm btn-danger">
-                            <i class="fas fa-check-square"></i>
-                            Si
+                            <i class="fas fa-check-square pr-1"></i>
+                             Si
                         </button>
                         <a href="{{route('clientes.index')}}" class="btn btn-sm btn-primary">
-                            <i class="fas fa-times-circle"></i>
-                            NO
+                            <i class="fas fa-times-circle pr-1"></i>
+                             NO
                         </a>
                     </div>
                 </form>
