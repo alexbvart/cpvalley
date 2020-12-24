@@ -1,20 +1,25 @@
 @extends('layout.plantilla')
 @section('contenido')
-<div class="container">
+
+<div class="container ">
     <br>
-    <div class="card">
+    <div class="card mt-4">
         <div class="card-header">
-            <h4><strong>Mantenedor de PRODUCTO</strong></h4>
+            <h4><strong>Productos 🥑</strong></h4>
         </div>
         <div class="card-body">
-            <h5 class="card-title"><u>.::Listado de Productos</u></h5>
-            <p class="card-text">
-                <form class="form-inline my-2 my-lg-0 float-right">
-                    <input name="buscarpor" class="form-control btn-sm mr-sm-2" type="search" placeholder="Buscar"
-                        aria-label="Search" value="{{$buscarpor}}">
-                    <button class="btn btn-success btn-sm my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
-                <a href="{{route('productos.create')}}" class="btn btn-sm btn-primary my-2 my-sm-0">Nuevo</a>
+            <div class="card-text">
+                <section class="py-4">
+                    <form class="form-inline  my-lg-0 float-right">
+                        <input name="buscarpor" class="form-control btn-sm mr-sm-2" type="search" placeholder="Buscar"
+                            aria-label="Search" value="{{$buscarpor}}">
+                        <button class="btn btn-success btn-sm my-sm-0" type="submit">Buscar</button>
+                    </form>
+                    <a href="{{route('productos.create')}}" class="btn btn-sm btn-primary  my-sm-0">
+                        + Nuevo producto
+                    </a>
+
+                </section>
                 @if (session('datos'))
                 <div class="alert alert-warning alert-dissmissible fade show mt-3" role="alert">
                     {{session('datos')}}
@@ -46,7 +51,7 @@
                                 <td>{{$item->precio}}</td>
                                 <td>{{$item->cantidad}}</td>
                                 <td>
-                                    <a href="{{route('productos.edit',$item->producto_id)}}" class="btn btn-sm btn-info"><i
+                                    <a href="{{route('productos.edit',$item->producto_id)}}" class="btn btn-sm btn-warning mr-2"><i
                                             class="fas fa-edit"></i>Editar</a>
                                     <a href="{{route('productos.confirmar',$item->producto_id)}}"
                                         class="btn btn-sm btn-danger"><i class="fas fa-trash"></i>Quitar</a>
@@ -57,7 +62,7 @@
                     </table>
                 </div>
                 {{$producto->links()}}
-            </p>
+            </div>
         </div>
     </div>
 </div>

@@ -1,13 +1,27 @@
 @extends('layout.plantilla')
 @section('contenido')
     <div class="container">
-        <h1>Listado de Unidades</h1>
-        <form class="form-inline my-2 my-lg-0 float-right">
-            <input name="buscarpor" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search"
-                value="{{ $buscarpor }}">
-            <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
-        </form>
-        <a href="{{ route('unidad.create') }}" class="btn btn-primary my-2 my-sm-0">Nuevo</a>
+<br>
+        <div class="card mt-4">
+            <div class="card-header">
+                <h4><strong> Unidades  ⚖</strong></h4>
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+
+        <section class="my-4">
+            <form class="form-inline my-2 my-lg-0 float-right">
+                <input name="buscarpor" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search"
+                    value="{{ $buscarpor }}">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            <a href="{{ route('unidad.create') }}" class="btn btn-primary my-2 my-sm-0">
+                + Nuevo Unidad
+            </a>
+
+
+        </section>
+
         @if (session('datos'))
             <div class="alert alert-warning alert-dissmissible fade show mt-3" role="alert">
                 {{ session('datos') }}
@@ -31,9 +45,9 @@
                             <td>{{ $f->unidad_id }}</td>
                             <td>{{ $f->descripcion }}</td>
                             <td>
-                                <a href="{{ route('unidad.edit', $f->unidad_id) }}" class="btn btn-info"><i
+                                <a href="{{ route('unidad.edit', $f->unidad_id) }}" class="btn btn-sm btn-warning mr-2"><i
                                         class="fas fa-edit"></i>Editar</a>
-                                <a href="{{ route('unidad.confirmar', $f->unidad_id) }}" class="btn btn-danger"><i
+                                <a href="{{ route('unidad.confirmar', $f->unidad_id) }}" class="btn btn-sm btn-danger"><i
                                         class="fas fa-trash"></i>Quitar</a>
                             </td>
                         </tr>
@@ -43,4 +57,7 @@
         </div>
         {{ $unidad->links() }}
     </div>
+</div>
+</div>
+</div>
 @endsection

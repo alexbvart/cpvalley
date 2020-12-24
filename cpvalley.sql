@@ -109,14 +109,14 @@ CREATE TABLE IF NOT EXISTS `clientes` (
 --
 
 INSERT INTO `clientes` (`cliente_id`, `ruc_dni`, `nombres`, `email`, `direccion`, `estado`) VALUES
-(1, '12345678', 'Euler Pol ', 'juan@gmail.com', 'chepen', 1),
-(2, '79542512', 'Alfonso Briones', 'pedro@gmail.com', 'chepen', 1),
-(3, '76181878', 'Eudocia Rodriguez', 'josue@gmail.com', 'Guadalupe', 0),
-(4, '76181878', 'Yeimi Chichon', 'josue@unitru.edu.pe', 'chepen', 0),
-(5, '73670296', 'Nuri Tasilla', 'tasilla.990125@gmail.com', 'los jardines', 1),
-(6, '73670296', 'Gianella Briones', 'tasilla.990125@gmail.com', 'los jardines', 1),
-(7, '73670296', 'Alex Briones', 'tasilla.990125@gmail.com', 'los jardines', 1),
-(8, '73670296', 'Yliana Ventura', 'tasilla.990125@gmail.com', 'los jardines', 1);
+(1, '12345678', 'Euler Pol ', 'euler@gmail.com', 'Portada de la sierra', 1),
+(2, '79542512', 'Alfonso Briones', 'alfonso@gmail.com', 'Portada de la sierra', 1),
+(3, '76181878', 'Eudocia Rodriguez', 'eudocia@gmail.com', 'Portada de la sierra', 1),
+(4, '76381878', 'Yeimi Chichon', 'yeimi@unitru.edu.pe', 'Portada de la sierra', 1),
+(5, '73670296', 'Nuri Tasilla', 'tasilla.990125@gmail.com', 'Ciudad de Dios, los jardines', 1),
+(6, '73670286', 'Gianella Briones', 'gianella@gmail.com', 'Tecapa', 1),
+(7, '73679696', 'Alex Briones', 'alex@gmail.com', 'Tecapa', 1),
+(8, '73770646', 'Yliana Ventura', 'yliana@gmail.com', 'Tecapa', 1);
 
 -- --------------------------------------------------------
 

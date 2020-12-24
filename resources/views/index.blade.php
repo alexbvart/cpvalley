@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Jolleriastyls</title>
+    <title>Valley</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="stylesheet" href="/adminlte/plugins/fontawesome-free/css/all.min.css">
@@ -11,26 +11,35 @@
     <link rel="stylesheet" href="/adminlte/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body class="login">
 
+    
+
+
     <div class="logo">
 
-        <strong><p>Sistema de Ventas Jolleriastyls</p></strong>
     </div>
-    <div class="content container py-4">
+    <div class="container my-auto">
 
         <form method="POST" action="{{ route('login') }}">
             @csrf
             @method('POST')
-            <h2 class="form-title">Inicio de Sesión</h2>
+            <h4 class="text-xl font-semibold">Hola 👋, <span class="font-normal">por favor, rellene con tu información para
+                ingresar a
+                <span class="text-xl font-semibold color-green-dark"> valley</span>.
+                </span>
+            </h4>
 
-            <div class="form-group">
+            <div class="form-group mt-4">
                 <label class="control-label">Nombre:</label>
                 <div class="input-icon">
-                    <input class="form-control @error('name') is-invalid @enderror" type="text"
+                    <input class="form-control @error('name') is-invalid @enderror
+                                block w-full p-3 mt-2 text-gray-600 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner
+                    
+                    " type="text"
                         placeholder="Ingrese su nombre de usuario" id="name" name="name" value="{{ old('name') }}" />
                     @error('name')
                         <span class="invalid-feedback" role="alert">
@@ -55,7 +64,7 @@
 
             <hr />
             <div class="form-actions">
-                <button class="btn btn-success btn-block btn-lg">
+                <button class="btn btn-success btn-block btn-lg text-white uppercase bg-black">
                     Ingresar
                 </button>
             </div>
@@ -63,7 +72,7 @@
         </form>
     </div>
     <div class="copyright mt-2">
-        2020 &copy; Sistema de Jolleria Styls.
+        2020 &copy; Sistema de ventas Valley.
     </div>
 
 

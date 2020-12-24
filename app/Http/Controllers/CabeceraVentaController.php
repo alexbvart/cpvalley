@@ -22,7 +22,9 @@ class CabeceraVentaController extends Controller
     public function index()
     {
         //
-        $venta=CabeceraVenta::where('estado','=','1')->paginate(5);
+        $venta=CabeceraVenta::where('estado','=','1')
+        ->orderBy('venta_id', 'DESC')
+        ->paginate(6);
         return view('ventas.index', compact('venta'));
     }
 

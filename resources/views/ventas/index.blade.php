@@ -1,7 +1,8 @@
 @extends('layout.plantilla')
 @section('contenido')
 <div class="container">
-    <h1>LISTADO DE VENTAS</h1>
+    <br></br>
+    <h1 class="py-2">LISTA GENERAL DE VENTAS 💸</h1>
     <form class="form-inline my-2 my-lg-0 float-right">
         <input name="buscarpor" class="form-control btn-sm mr-sm-2" type="search" placeholder="Buscar"
             aria-label="Search" value="">
@@ -22,7 +23,7 @@
             <tr>
                 <th scope="col">Codigo</th>
                 <th scope="col">Tipo</th>
-                <th scope="col">NroDoc</th>
+                <th scope="col">Codigo</th>
                 <th scope="col">Fecha</th>
                 <th scope="col">RUC/DNI</th>
                 <th scope="col">NOMBRES/RAZON</th>

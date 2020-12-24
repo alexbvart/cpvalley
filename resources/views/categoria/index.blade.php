@@ -1,21 +1,21 @@
 @extends('layout.plantilla')
 @section('contenido')
-    <div class="container">
+    <div class="container m-auto">
         <br>
         <div class="card">
             <div class="card-header">
-                <h4><strong>CATEGORÍA</strong></h4>
+                <h4><strong>Categorìas 📦</strong></h4>
             </div>
             <div class="card-body">
                 <p class="card-text">
 
-                <nav class="navbar navbar-light bg-light justify-content-between">
+                <nav class="  py-4">
 
-                    <a href="{{ route('categoria.create') }}" class="btn btn-primary btn-md  my-sm-0">
-                         <strong>+ Nuevo</strong>
+                    <a href="{{ route('categoria.create') }}" class="btn btn-sm btn-primary my-2 my-sm-0 ">
+                         + Nueva Categoria
                     </a>
 
-                    <form class="form-inline  my-lg-0">
+                    <form class="form-inline float-right">
                         <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search"
                             value="{{ $buscarpor }}">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
@@ -48,7 +48,7 @@
                                   <td>{{ $itemcategoria->descripcion }}</td>
                                   <td>
                                       <a href="{{ route('categoria.edit', $itemcategoria->categoria_id) }}"
-                                          class="btn btn-sm btn-info"><i class="fas fa-edit"></i>Editar</a>
+                                          class="btn btn-sm btn-warning mr-2"><i class="fas fa-edit"></i>Editar</a>
                                       <a href="{{ route('categoria.confirmar', $itemcategoria->categoria_id) }}"
                                           class="btn btn-sm btn-danger"><i class="fas fa-trash"></i>Quitar</a>
                                   </td>
