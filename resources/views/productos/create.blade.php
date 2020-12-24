@@ -4,10 +4,9 @@
     <br>
     <div class="card">
         <div class="card-header">
-            <h4><strong>Mantenedor de PRODUCTO</strong></h4>
+            <h4><strong>Nuevo Producto</strong></h4>
         </div>
         <div class="card-body">
-            <h5 class="card-title"><u>.::Nuevo Producto</u></h5>
             <p class="card-text">
                 <form action="{{route('productos.store')}}" method="POST" onsubmit="return validar_prod()">
                     @csrf

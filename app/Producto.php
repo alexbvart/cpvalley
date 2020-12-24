@@ -32,7 +32,7 @@ class Producto extends Model
     }  
     
     public static function ActualizarStock($producto_id,$cantidad){
-        return DB::select(DB::raw("UPDATE productos set cantidad = cantidad - '".$cantidad."' where producto_id='".$producto_id."'")
+        return DB::select("UPDATE productos set cantidad = cantidad - '".$cantidad."' where producto_id='".$producto_id."'"
         );
     }
 }
