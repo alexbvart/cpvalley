@@ -6,14 +6,14 @@
     <title>Valley</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
     <style>
         body{color:#000;font-family:'Open Sans',sans-serif;padding:0px!important;margin:0px!important;font-size:13px;direction:ltr}.text-center{text-align:center}
     </style>
+
 </head>
 
 <body class="login">
-
+    
     <div class="logo">
     </div>
 
@@ -81,17 +81,17 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/style.css">
     
-    <link rel="stylesheet" href="/adminlte/plugins/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-    <link rel="stylesheet" href="/adminlte/dist/css/adminlte.min.css">
+
 
     <script src="/adminlte/plugins/jquery/jquery.min.js"></script>
     <script src="/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/adminlte/dist/js/adminlte.min.js"></script>
+{{--     <script src="/adminlte/dist/js/adminlte.min.js"></script> --}}
     
-    
+    <link rel="stylesheet" href="/adminlte/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="/adminlte/dist/css/adminlte.min.css">    
 
 </body>
 
