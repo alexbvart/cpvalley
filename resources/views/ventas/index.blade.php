@@ -23,33 +23,35 @@
             </div>
             @endif
             <br><br>
-            <table class="table table-striped">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">Codigo</th>
-                        <th scope="col">Tipo</th>
-                        <th scope="col">Codigo</th>
-                        <th scope="col">Fecha</th>
-                        <th scope="col">RUC/DNI</th>
-                        <th scope="col">NOMBRES/RAZON</th>
-                        <th scope="col">TOTAL</th>           
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($venta as $itemventa)
-                    <tr>
-                        <td>{{$itemventa->venta_id}}</td>
-                        <td>{{$itemventa->Tipo->descripcion}}</td>
-                        <td>{{$itemventa->nrodoc}}</td>
-                        <td>{{$itemventa->fecha_venta}}</td>
-                        <td>{{$itemventa->cliente->ruc_dni}}</td>
-                        <td>{{$itemventa->cliente->nombres}}</td>
-                        <td>S/. {{$itemventa->total}}</td>           
-                    </tr>
-                    @endforeach
-                </tbody>
-            </table>
-        </div>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Codigo</th>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Codigo</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">RUC/DNI</th>
+                            <th scope="col">NOMBRES/RAZON</th>
+                            <th scope="col">TOTAL</th>           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($venta as $itemventa)
+                        <tr>
+                            <td>{{$itemventa->venta_id}}</td>
+                            <td>{{$itemventa->Tipo->descripcion}}</td>
+                            <td>{{$itemventa->nrodoc}}</td>
+                            <td>{{$itemventa->fecha_venta}}</td>
+                            <td>{{$itemventa->cliente->ruc_dni}}</td>
+                            <td>{{$itemventa->cliente->nombres}}</td>
+                            <td>S/. {{$itemventa->total}}</td>           
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>  
+        </div>  
     </div>
 
     
