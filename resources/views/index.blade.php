@@ -11,19 +11,9 @@
     <link rel="stylesheet" href="/adminlte/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/style.css">
-    
-    {{--
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    --}}
 </head>
 
-<body class="login">
-
-
-
-
-    <div class="logo">
-
+<body>
     </div>
     <div class="container my-auto">
 
@@ -33,7 +23,7 @@
 
             <div class="card text-center">
                 <div class="card-header">
-                    <img src="{{asset('images/logo-verde.svg')}}" alt="logo de valley">
+                    <img src="{{ asset('images/logo-verde.svg') }}" alt="logo de valley">
                 </div>
                 <div class="card-body">
 
@@ -45,38 +35,34 @@
                         <label class="control-label float-left">Nombre:</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="">Nombre de usuario</span>
+                                <span class="input-group-text">Nombre de usuario</span>
                             </div>
-                            <input class="form-control @error('name') is-invalid @enderror
-                                        block w-full p-3  text-gray-600 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner
-                            
-                            " type="text" placeholder="Administrador" id="name" name="name"
-                                value="{{ old('name') }}" />
+                            <input class="form-control @error('name') is-invalid @enderror" type="text"
+                                placeholder="Administrador" id="name" name="name" value="{{ old('name') }}" />
                             @error('name')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
                             @enderror
                         </div>
                     </div>
-    
+
                     <div class="form-group mt-4">
                         <label class="control-label float-left">Contraseña:</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="">Contraseña</span>
+                                <span class="input-group-text">Contraseña</span>
                             </div>
                             <input class="form-control p-3  @error('password') is-invalid @enderror" type="password"
                                 placeholder="********" id="password" name="password" value="{{ old('password') }}" />
                             @error('password')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
                             @enderror
                         </div>
                     </div>
-        
-        
+
                     <div class="form-actions mt-4">
                         <button class="btn btn-success btn-block btn-lg text-white uppercase bg-black">
                             Ingresar
@@ -87,11 +73,8 @@
                     2020 &copy; Sistema de ventas Valley.
                 </div>
             </div>
-
         </form>
     </div>
-
-
 
     <script src="/adminlte/plugins/jquery/jquery.min.js"></script>
     <script src="/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
