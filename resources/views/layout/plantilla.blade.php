@@ -170,6 +170,19 @@
 
   @yield('script')
 
+  
+  <!-- Fonts -->
+  <!-- Styles -->
+  <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/appapp.css') }}" rel="stylesheet">
+  <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
+  <!-- AdminLTE App -->
+  <script src="/adminlte/dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="/adminlte/dist/js/demo.js"></script>
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="/adminlte/plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
@@ -178,19 +191,6 @@
   <link rel="stylesheet" href="/adminlte/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
-  <!-- Scripts -->
-  <script src="{{ asset('js/app.js') }}" defer></script>
-
-  <!-- Fonts -->
-  <!-- Styles -->
-  <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/appapp.css') }}" rel="stylesheet">
-
-  <!-- AdminLTE App -->
-  <script src="/adminlte/dist/js/adminlte.min.js"></script>
-  <!-- AdminLTE for demo purposes -->
-  <script src="/adminlte/dist/js/demo.js"></script>
 
 </body>
 
