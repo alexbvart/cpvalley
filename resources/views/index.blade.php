@@ -6,15 +6,17 @@
     <title>Valley</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link rel="stylesheet" href="/adminlte/plugins/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-    <link rel="stylesheet" href="/adminlte/dist/css/adminlte.min.css">
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body{color:#000;font-family:'Open Sans',sans-serif;padding:0px!important;margin:0px!important;font-size:13px;direction:ltr}.text-center{text-align:center}
+    </style>
 </head>
 
-<body>
+<body class="login">
+
+    <div class="logo">
     </div>
+
     <div class="container my-auto">
 
         <form method="POST" action="{{ route('login') }}">
@@ -53,7 +55,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Contraseña</span>
                             </div>
-                            <input class="form-control p-3  @error('password') is-invalid @enderror" type="password"
+                            <input class="form-control @error('password') is-invalid @enderror" type="password"
                                 placeholder="********" id="password" name="password" value="{{ old('password') }}" />
                             @error('password')
                                 <span class="invalid-feedback" role="alert">
@@ -76,11 +78,20 @@
         </form>
     </div>
 
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="/adminlte/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="/adminlte/dist/css/adminlte.min.css">
+
     <script src="/adminlte/plugins/jquery/jquery.min.js"></script>
     <script src="/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/adminlte/dist/js/adminlte.min.js"></script>
+    
+    
 
 </body>
 
