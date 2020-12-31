@@ -47,3 +47,8 @@ Route::resource('ventas', 'CabeceraVentaController');
 Route::get('/EncontrarProducto/{producto_id}', 'CabeceraVentaController@ProductoCodigo');
 Route::get('/EncontrarTipo/{tipo_id}', 'CabeceraVentaController@PorTipo');
 
+Route::get('/ui', function () {
+    return view('ui');
+});
+
+
