@@ -5,7 +5,7 @@
 @endsection
 @section('contenido')
 <div class="container">
-    <br>
+    <br> 
     <div class="card mt-4">
         <div class="card-body">
             <h4 class="py-2">REGISTRAR VENTA 💸</h4>
