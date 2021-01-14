@@ -19,27 +19,31 @@
 
     <div class="container my-auto">
 
-        <form method="POST" action="{{ route('login') }}">
+        <form method="post" action="{{ route('login') }}">
             @csrf
             @method('POST')
 
             <div class="card text-center">
                 <div class="card-header">
-                    <img src="{{ asset('images/logo-verde.svg') }}" alt="logo de valley">
+                    <h1>
+                        <img src="{{ asset('images/logo-verde.svg') }}" alt="logo de valley">
+                    </h1>
                 </div>
                 <div class="card-body">
 
-                    <h5 class="card-text">
-                        Hola 👋, por favor, rellena tu información para ingresar a valley.
+                    
+                    <h5  class="card-text">
+                            Hola 👋, por favor, rellena tu información para ingresar a valley.
                     </h5>
+                    
 
                     <div class="form-group mt-4">
-                        <label class="control-label float-left">Nombre:</label>
+                        <label for="name" class="control-label float-left">Nombre:</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Nombre de usuario</span>
                             </div>
-                            <input class="form-control @error('name') is-invalid @enderror" type="text"
+                            <input class="form-control @error('name') is-invalid @enderror" type="text" title="Nombre del usuario"
                                 placeholder="Administrador" id="name" name="name" value="{{ old('name') }}" />
                             @error('name')
                                 <span class="invalid-feedback" role="alert">
@@ -50,12 +54,12 @@
                     </div>
 
                     <div class="form-group mt-4">
-                        <label class="control-label float-left">Contraseña:</label>
+                        <label for="password" class="control-label float-left">Contraseña:</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Contraseña</span>
                             </div>
-                            <input class="form-control @error('password') is-invalid @enderror" type="password"
+                            <input class="form-control @error('password') is-invalid @enderror" type="password" title="contraseña del usuario"
                                 placeholder="********" id="password" name="password" value="{{ old('password') }}" />
                             @error('password')
                                 <span class="invalid-feedback" role="alert">
