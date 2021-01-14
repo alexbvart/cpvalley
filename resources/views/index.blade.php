@@ -70,12 +70,10 @@
                     </div>
 
                     <div class="form-actions mt-4">
-                        <button class="btn btn-success btn-block btn-lg text-white uppercase bg-black">
-                            Ingresar
-                        </button>
+                        <input  class="btn btn-success btn-block btn-lg text-white uppercase bg-black" type="submit"value="Ingresar" />
                     </div>
                 </div>
-                <div class="card-footer text-muted">
+                <div class="card-footer text-muted" >
                     2020 &copy; Sistema de ventas Valley.
                 </div>
             </div>
