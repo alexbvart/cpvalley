@@ -21,7 +21,7 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="">Descripcion</label>
-                                <input type="text" class="form-control @error('descripcion') is-invalid @enderror"
+                                <input type="text" class="form-control @error('descripcion') is-invalid @enderror onlyLeter"
                                     id="descripcion" name="descripcion" value="{{$categoria->descripcion}}">
                                 @error('descripcion')
                                 <span class="invalid-feedback" role="alert">
@@ -39,4 +39,6 @@
     </div>
 </div>
 <script src="/js/validaciones.js"></script>
+<script src="/js/onlyText.js"></script>
+
 @endsection

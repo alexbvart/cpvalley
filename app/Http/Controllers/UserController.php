@@ -2,23 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\User as RequestsUser;
 use App\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
-    //   
     public function __construct(){
         $this->middleware('guest', ['only' => 'showLogin']);
     }
 
-    public function showLogin(){
-        return view('index');
-    }
 
-    public function login(Request $request)
+    public function login(RequestsUser $request)
     {
+ 
+
         $data=request()->validate([
             'name'=>'required',
             'password'=>'required'
@@ -35,6 +33,8 @@ class UserController extends Controller
 
         $name=$request->get('name');
         $query=User::where('name','=',$name)->get();
+
+        
         if ($query->count()!=0)
         {
             $hashp=$query[0]->password;
@@ -42,8 +42,6 @@ class UserController extends Controller
             if (password_verify($password, $hashp))
             {
                 return redirect('home');
-
-                // return view('bienvenido');
             }
             else
             {
@@ -58,6 +56,11 @@ class UserController extends Controller
         }
     }  
 
+
+    public function showLogin(){
+        return view('index');
+    }
+    
     public function logout(){
         Auth::logout();
         return redirect('/');

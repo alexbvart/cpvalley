@@ -15,7 +15,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <label for="">Ruc/Dni</label>
-                                <input type="text" class="form-control @error('ruc_dni') is-invalid @enderror"
+                                <input type="number" class="form-control @error('ruc_dni') is-invalid @enderror"
                                     id="ruc_dni" name="ruc_dni" placeholder="Ingrese ruc/dni"
                                     value="{{$cliente->ruc_dni}}">
                                 @error('ruc_dni')
@@ -29,7 +29,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <label for="">Nombres/Razón</label>
-                            <input type="text" class="form-control @error('nombres') is-invalid @enderror" id="nombres"
+                            <input type="text" class="form-control @error('nombres') is-invalid @enderror onlyLeter" id="nombres"
                                 name="nombres" placeholder="Ingrese nombres" value="{{$cliente->nombres}}">
                             @error('nombres')
                             <span class="invalid-feedback" role="alert">
@@ -41,7 +41,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <label for="">email</label>
-                            <input type="text" class="form-control @error('email') is-invalid @enderror" id="email"
+                            <input type="email" class="form-control @error('email') is-invalid @enderror" id="email"
                                 name="email" placeholder="Ingrese ruc/dni" value="{{$cliente->email}}">
                             @error('email')
                             <span class="invalid-feedback" role="alert">
@@ -53,7 +53,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <label for="">Dirección</label>
-                            <input type="text" class="form-control @error('direccion') is-invalid @enderror"
+                            <input type="text" class="form-control @error('direccion') is-invalid @enderror onlyText" 
                                 id="direccion" name="direccion" placeholder="Ingrese direccion"
                                 value="{{$cliente->direccion}}">
                             @error('direccion')
@@ -74,4 +74,5 @@
     </div>
 </div>
 <script src="/js/validaciones.js"></script>
+<script src="/js/onlyText.js"></script>
 @endsection

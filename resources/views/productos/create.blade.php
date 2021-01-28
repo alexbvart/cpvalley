@@ -18,7 +18,7 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="">Descripción</label>
-                                <input type="text" class="form-control @error('descripcion') is-invalid @enderror"
+                                <input type="text" class="form-control @error('descripcion') is-invalid @enderror onlyLeter"
                                     id="descripcion" name="descripcion" placeholder="Ingrese descripción">
                                 @error('descripcion')
                                 <span class="invalid-feedback" role="alert">
@@ -79,6 +79,6 @@
             </p>
         </div>
     </div>
-</div>
 <script src="/js/validaciones.js"></script>
+<script src="/js/onlyText.js"></script>
 @endsection

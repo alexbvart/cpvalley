@@ -15,10 +15,20 @@ function validar_cat() {
     return true;
 }
 
+function OnlyText(text) {
+    var OnlyText = text.replace(/[^0-9a-zA-ZñÑáéíóúÁÉÍÓÚ.()/::,@ _-]/g,'');
+    return OnlyTex;
+}
+
 function validar_prod() {
     descripcion = document.getElementById("descripcion").value;
+    
+
     precio = document.getElementById("precio").value;
     cantidad = document.getElementById("cantidad").value;
+
+
+
     if (descripcion.length == 0 || /^\s+$/.test(descripcion)) {
         alert('¡Ingrese descripción!');
         return false;

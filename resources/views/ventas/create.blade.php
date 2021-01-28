@@ -125,7 +125,7 @@
                         <label for="">Cantidad </label>
                     </div>
                     <div class="col-md-2">
-                        <input type="number" step=".1" min="0.1" value="1" class="form-control" name="cantidad" id="cantidad">
+                        <input type="number" step="1" min="1" value="1" class="form-control" name="cantidad" id="cantidad">
                     </div>
                     <div class="col-md-3">
                         <button type="button" id="btnadddet" class="btn btn-success"><i class="fas fa-shopping-cart"></i>

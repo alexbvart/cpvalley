@@ -26,4 +26,5 @@
         <a href="{{route('unidad.index')}}" class="btn btn-danger"><i class="fas fa-ban"></i>Cancelar</a>
     </form>
 </div>
+<script src="/js/onlyText.js"></script>
 @endsection
